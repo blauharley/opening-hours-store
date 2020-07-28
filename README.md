@@ -11,7 +11,7 @@ What it returns depends on the `requestedTimestamp` and what `OpeningHourTimeEnt
 
 # `main.php` Programm arguments-order:
 
-1. `status`: It calls `isOpenAt`.
+1. `status` or `next`: It calls `isOpenAt` or `getTimestampOfNextStateChangeStartingAt`.
 2. `YYYY-MM-DD HH:mm`: Human readbale Date representation.
 3. `c` or `e`: Tenant-Switching between a Customer (`c`) and an Employee (`e`)
 
