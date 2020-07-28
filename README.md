@@ -25,7 +25,8 @@ What it returns depends on the `requestedTimestamp` and what `OpeningHourTimeEnt
 
 `StateExceptionTimeEntry` can be used to define special `Timespan`'s that can have an effect on different layers (``ChargingStation`, `Store` and `Tenant`) in both directions.
 
-* `php main.php status '2020-12-24 11:45' c` -> returns `false`, although it's also a `DaysOfWeek::Thursday`.
+* `php main.php status '2020-12-24 11:45' c` -> returns `false`, although it's also a `DaysOfWeek::Thursday`, 
+but it's `StateException` indicates that it's closed on the whole day.
 
 For more info, please have a look into `main.php`.
 
